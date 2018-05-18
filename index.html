@@ -1,0 +1,40 @@
+<html>
+<head>
+    <script src="./tree.js"></script>
+    <script src="./datgui.js"></script>
+    <script src="./orbit.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+</head>
+<body>
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Clusters</span>
+        </div>
+        <input id="clustersCountInput" autofocus type="text" class="form-control" value='10'/>
+    </div>
+    <!--<div class="input-group input-group-sm mb-3">-->
+        <!--<div class="input-group-prepend">-->
+            <!--<span class="input-group-text">Elements</span>-->
+        <!--</div>-->
+        <!--<input id="elementsCountInput" type="text" class="form-control" value='100'/>-->
+    <!--</div>-->
+    <div class="input-group input-group-sm mb-3">
+        <label for="speed">Speed</label>
+        <input type="range" max="1" min="0.1" step="0.1" class="custom-range" id="speed">
+    </div>
+    <!--<div class="form-group form-check">-->
+        <!--<input type="checkbox" class="form-check-input" id="auto-mode">-->
+        <!--<label class="form-check-label" for="auto-mode">Auto mode</label>-->
+    <!--</div>-->
+    <section class="controls">
+        <button id="startButton" class="btn btn-danger btn-outline-danger btn-sm" onclick="start()">Start</button>
+        <button id="nextButton" class="btn btn-dark btn-outline-primary btn-sm">Next</button>
+        <button id="finishButton" class="btn btn-dark btn-outline-success btn-sm">Finish</button>
+    </section>
+    <canvas class="img" id="image"></canvas>
+    <canvas class="img" id="newimage"></canvas>
+    <canvas id="canvas"></canvas>
+    <script src="./script.js"></script>
+</body>
+</html>

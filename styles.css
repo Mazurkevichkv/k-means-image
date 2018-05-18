@@ -1,0 +1,46 @@
+.controls {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 150px;
+    justify-content: space-around;
+}
+
+#newimage {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    z-index: 2;
+}
+
+label {
+    color: white;
+    margin-left: 10px;
+    margin-top: -3px;
+}
+button {
+    width: 42%;
+}
+
+.input-group {
+    max-width: 150px;
+}
+
+input {
+    width: 40px;
+}
+
+canvas:not(.img) {
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+    left: 50px;
+}
+
+.img {
+    margin-top: 50px;
+}
+
+body {
+    background: black!important;
+}
